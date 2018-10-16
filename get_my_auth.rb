@@ -2,7 +2,7 @@ require 'rubygems'
 require 'twitter'
 require 'yaml'
 
-require 'twitter'
+
 client = Twitter::REST::Client.new do |config|
   config.consumer_key        = "consumer key"
   config.consumer_secret     = "consumer secret"
