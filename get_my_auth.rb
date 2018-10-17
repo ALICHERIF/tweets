@@ -12,6 +12,7 @@ end
 
 tweets = client.user_timeline('EnsSupAlgerie', count: 200)
 #puts "#{tweets}"
+# it will show you all id 
 tweets.each { |tweet| puts tweet.full_text }
 
 File.write('tweets.txt', YAML.dump(tweets))
